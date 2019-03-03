@@ -1532,6 +1532,13 @@ clean-css@4.2.x:
   dependencies:
     source-map "~0.6.0"
 
+clean-webpack-plugin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/clean-webpack-plugin/-/clean-webpack-plugin-1.0.1.tgz#b16ee2f1386aea403010236e632447c7d3505f5a"
+  integrity sha512-gvwfMsqu3HBgTVvaBa1H3AZKO03CHpr5uP92SPIktP3827EovAitwW+1xoqXyTxCuXnLYpMHG5ytS4AoukHDWA==
+  dependencies:
+    rimraf "^2.6.1"
+
 cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
@@ -6881,6 +6888,7 @@ wcwidth@^1.0.0:
 webpack-cli@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.2.3.tgz#13653549adfd8ccd920ad7be1ef868bacc22e346"
+  integrity sha512-Ik3SjV6uJtWIAN5jp5ZuBMWEAaP5E4V78XJ2nI+paFPh8v4HPSwo/myN0r29Xc/6ZKnd2IdrAlpSgNOu2CDQ6Q==
   dependencies:
     chalk "^2.4.1"
     cross-spawn "^6.0.5"
