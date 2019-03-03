@@ -14,13 +14,18 @@ export const setLoginState = (isLogin) => ({
 export const signup = (formData, next) => async (dispatch) => {
 
   // const tempData = tempfyData(formData);
-  // console.log('tempData', tempData);
+  // console.log('tempData', formData);
+  const finalSubmitData = {
+    ...formData,
+    role: _.get(formData, 'role.value')
+  };
+
   const response = await dispatch({
     [RSAA]: {
       endpoint: `${API_URL}/${API_VERSION}/proxy/register`,
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(finalSubmitData),
       types: types.SIGNUP
     }
   });

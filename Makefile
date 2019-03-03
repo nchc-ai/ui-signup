@@ -11,6 +11,7 @@ endif
 
 build-frontend-img:
 	docker build -t ogre0403/twgc:ui-signup-$(TAG) .
+	docker tag ogre0403/twgc:ui-signup-$(TAG) registry.gitlab.com/nchc-ai/aitrain-deploy/twgc/ui-signup:$(TAG)
 
 run-ui-docker:
 	docker run -ti --rm  -p 3011:3011  ogre0403/twgc:ui-signup-$(TAG)

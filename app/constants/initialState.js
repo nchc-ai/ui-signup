@@ -3,4 +3,5 @@ export const initialSignupState = {
   cName: '',
   password: '',
   confirmPassword: '',
+  role: '',
 };

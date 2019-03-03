@@ -54,5 +54,32 @@ export const signupForm = [
       required: '密碼至少需為 6 個字元'
     },
     isRequired: true
+  }, {
+    key: 5,
+    size: 12,
+    name: 'role',
+    radioKey: 1,
+    inputType: 'radio',
+    mainLabel: '選擇註冊身份',
+    className: 'fl',
+    target: 'signup',
+    options: [
+      {
+        key: 1,
+        radioKey: '1-1',
+        label: '老師',
+        value: 'teacher'
+      }, {
+        key: 2,
+        radioKey: '1-2',
+        label: '管理員',
+        value: 'superuser'
+      }
+    ],
+    isRequired: true,
+    validators: { required },
+    errorMessage: {
+      required: '您尚未選擇身份'
+    }
   }
 ];
