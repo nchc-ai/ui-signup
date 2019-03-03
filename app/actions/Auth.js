@@ -30,7 +30,7 @@ export const signup = (formData, next) => async (dispatch) => {
     }
   });
 
-  console.log('[signup] payload', response)
+  // console.log('[signup] payload', response)
 
   if (_.isUndefined(response) || response.error) {
     notify.show(_.get(response, 'payload.response.message', ''), 'error', TOAST_TIMING);

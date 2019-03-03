@@ -3,5 +3,5 @@ export const initialSignupState = {
   cName: '',
   password: '',
   confirmPassword: '',
-  role: '',
+  role: { label: '老師', value: 'teacher' },
 };

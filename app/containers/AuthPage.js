@@ -44,7 +44,7 @@ class AuthPage extends Component {
   }
 
   onAfterSubmit = (response) => {
-    console.log('[signup] response', response);
+    // console.log('[signup] response', response);
     if (response.error) {
       notify.show(`註冊失敗 失敗原因：${response.payload.response.message}`, 'error', 2700);
     } else {
