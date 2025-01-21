@@ -1,6 +1,6 @@
 FROM node:16.20.2-alpine
 
-WORKDIR /src/gitlab.com/nchc-ai/aitrain-ui-signup
+WORKDIR /src/github.com/nchc-ai/aitrain-ui-signup
 
 
 COPY yarn.lock .
